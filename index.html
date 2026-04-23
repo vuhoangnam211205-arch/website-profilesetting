@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Settings</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bai5.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <img
+          class="avatar"
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+          alt="avatar"
+        />
+        <h1>Profile Settings</h1>
+      </header>
+
+      <form class="form">
+        <section class="card">
+          <h2>Account</h2>
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" />
+            Full Name</label
+          >
+          <input type="text" placeholder="Your name" />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" />
+            Email</label
+          >
+          <input type="email" placeholder="your@email.com" />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/484/484582.png" />
+            Language</label
+          >
+          <select>
+            <option>English</option>
+            <option>Vietnamese</option>
+            <option>Japanese</option>
+          </select>
+        </section>
+
+        <section class="card">
+          <h2>Preferences</h2>
+
+          <label class="check">
+            <input type="checkbox" checked />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1827/1827392.png"
+            />
+            <span>Email notifications</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1827/1827349.png"
+            />
+            <span>Marketing updates</span>
+          </label>
+
+          <label>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png"
+            />
+            Theme</label
+          >
+          <select>
+            <option>Light</option>
+            <option>Dark</option>
+            <option>System</option>
+          </select>
+        </section>
+
+        <section class="card row">
+          <button type="button" class="btn-outline">Change Password</button>
+          <button type="button" class="btn-outline">Enable 2FA</button>
+        </section>
+
+        <section class="card row">
+          <button type="submit" class="btn">Save Changes</button>
+          <button type="button" class="btn-outline">Cancel</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
